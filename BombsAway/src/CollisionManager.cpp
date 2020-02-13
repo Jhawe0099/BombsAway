@@ -52,7 +52,8 @@ bool CollisionManager::basicCollisionCheck(GameObject* object1, GameObject* obje
 			switch (object2->getType())
 			{
 			case WALL:
-				std::cout << "Collision with Wall!" << std::endl;
+				//std::cout << "Collision with Wall!" << std::endl;
+
 
 				// Y-position collision check
 				if (TheGame::Instance()->checkForKeystroke(SDL_SCANCODE_W))
@@ -211,7 +212,7 @@ bool CollisionManager::tileCollisionCheck(GameObject* object, int tileMap[12][20
 				std::cout << i << " " << j << std::endl;
 			if (tileType == 1) // 1 = Wall
 			{
-				std::cout << "Collision with Wall!" << std::endl;
+				//std::cout << "Collision with Wall!" << std::endl;
 				return true;
 			}
 		}
