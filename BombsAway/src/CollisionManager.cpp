@@ -212,7 +212,6 @@ bool CollisionManager::tileCollisionCheck(GameObject* object, int tileMap[12][20
 				std::cout << i << " " << j << std::endl;
 			if (tileType == 1) // 1 = Wall
 			{
-				//std::cout << "Collision with Wall!" << std::endl;
 				return true;
 			}
 		}
